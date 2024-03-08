@@ -1,4 +1,5 @@
-//inviting guests for dinner
-var guests = ["ali", "maaz", "aryan"];
-var invitation = "i would like to invite you for dinner at my home";
-guests.forEach(function (person) { return console.log(person, invitation); });
+var allguests = ["ali", "maaz", "aryan"];
+var notComing = allguests[2];
+console.log(notComing, "is busy somwhere");
+allguests.splice(2, 2, "faizan");
+allguests.forEach(function (guest) { return console.log("hello ".concat(guest, " would you like to dinner with me?")); });
