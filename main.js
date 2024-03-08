@@ -1,3 +1,4 @@
-//favourite mode of transportation
-var transportationMode = ["car", "bike", "cycle", "plane", "bus"];
-transportationMode.forEach(function (mode) { return console.log("i would like to own", mode); });
+//inviting guests for dinner
+var guests = ["ali", "maaz", "aryan"];
+var invitation = "i would like to invite you for dinner at my home";
+guests.forEach(function (person) { return console.log(person, invitation); });
