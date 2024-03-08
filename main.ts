@@ -1,4 +1,4 @@
-// creating guest list array
+// Shrinking Guest List by using ex.16
 
 
 let allguests = ["ali","maaz","aryan"];
@@ -40,3 +40,30 @@ console.log("updated list of our guests");
 
 // print particular guests with message
 allguests.forEach(oneguest => console.log(`hello ${oneguest}, would you like to dinner with me?`));
+
+
+// start shrinking
+
+
+// informing them 
+
+ console.log("guys unfortunately , the dinner table wont arrive on time, so i can invivte only two guests on dinner");
+
+// while loop to satisfy condition to remove guests until 2 names left
+
+ while(allguests.length > 2){
+
+    let removeGuest = allguests.pop();
+
+    console.log(`I am really sorry , ${removeGuest} i can not invite you on dinner`)
+ }
+
+//  message to remaining guests 
+
+allguests.forEach (lastTwo => console.log(`luckily ${lastTwo} you are invited to dinner with me`));
+
+// empty list , removing last two guest
+
+allguests.pop();
+allguests.pop();
+console.log(`empty list ${allguests}`);
