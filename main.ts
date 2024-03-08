@@ -1,1 +1,4 @@
-console.log ("Imam Ali(RA) once said,\"accept the apology,even if it is not sincere\"");
+let authorname = "Imam Ali(RA)";
+let qoute = "\"the world can not defeat you until you accept the defeat.\"";
+console.log (authorname,"once said\,",qoute);
+
