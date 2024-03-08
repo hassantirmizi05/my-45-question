@@ -1,4 +1,7 @@
-let authorname = "Imam Ali(RA)";
-let qoute = "\"the world can not defeat you until you accept the defeat.\"";
-console.log (authorname,"once said\,",qoute);
+let whitespacename = "\n\t hassan tirmizi \t\n";
 
+console.log (whitespacename)
+
+let withoutwhitespace = whitespacename.trim();
+
+console.log (withoutwhitespace)
