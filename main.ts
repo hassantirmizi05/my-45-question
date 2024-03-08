@@ -1,11 +1,5 @@
-//addition
-console.log(5+3);
+//friends name in an array
 
-//subtraction
-console.log(10-2);
+let friendsname = ["ali","maaz","aryan","hassan"];
 
-//multiplication
-console.log(2*4);
-
-//division
-console.log(24/3);
+friendsname.forEach(friendname => console.log(friendname));
