@@ -1,4 +1,1 @@
-let personName = "hassan tirmizi";
-console.log (personName.toLowerCase());
-console.log (personName.toUpperCase());
-console.log (personName.replace(/\b\w/g, (char) => char.toUpperCase()));
+console.log ("Imam Ali(RA) once said,\"accept the apology,even if it is not sincere\"");
