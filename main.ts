@@ -1,69 +1,28 @@
-// Shrinking Guest List by using ex.16
+// Seeing the World, array of places original order
 
+let places:string[] = ["haram","madinah","turkey","iraq","palestine"];
+console.log(`original order is ${places}`);
 
-let allguests = ["ali","maaz","aryan"];
+// copy of array in alphabetical order without modifying
+console.log(`alphabtical order`,[...places].sort());
 
-// creating variable for unavailable guests
+// showing the original order
+console.log(`original order ${places}`);
 
-let notComing = allguests[2];
+// copy of array in reverse order
+console.log("reverse order", [...places].reverse());
 
-// print name of unavailable guest
+// showing the original order
+console.log(`original order ${places}`);
 
-console.log(notComing,"is busy somwhere");
+// changed the order of original array without copying 
+console.log("original array reversed",places.reverse());
 
-// adding and removing specific guest
+// back to original order 
+console.log("back to original",places.reverse());
 
-allguests.splice(2,2,"faizan");
+// sorting original array again in alphabetical order
+console.log("alphabetical order",places.sort());
 
-// message for bigger table
-
-console.log("good news! , we have found a bigger dinner table");
-
-// add new guest at starting index of array
-
-allguests.unshift("aashir");
-
-// add new guest at end index of array
-
-allguests.push("rehan");
-
-// get middle index of array by average(middle value)
-
-let middleindex : number = Math.floor(allguests.length / 2);
-
-// add new guest at middle of index
-
-allguests.splice(middleindex, 0 , "hamza");
-
-// print updated list
-console.log("updated list of our guests");
-
-// print particular guests with message
-allguests.forEach(oneguest => console.log(`hello ${oneguest}, would you like to dinner with me?`));
-
-
-// start shrinking
-
-
-// informing them 
-
- console.log("guys unfortunately , the dinner table wont arrive on time, so i can invivte only two guests on dinner");
-
-// while loop to satisfy condition to remove guests until 2 names left
-
- while(allguests.length > 2){
-
-    let removeGuest = allguests.pop();
-
-    console.log(`I am really sorry , ${removeGuest} i can not invite you on dinner`)
- }
-
-//  message to remaining guests 
-
-allguests.forEach (lastTwo => console.log(`luckily ${lastTwo} you are invited to dinner with me`));
-
-// empty list , removing last two guest
-
-allguests.pop();
-allguests.pop();
-console.log(`empty list ${allguests}`);
+// reversing the original array
+console.log("reversed original array again",places.reverse());
