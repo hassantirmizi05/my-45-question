@@ -1,8 +1,14 @@
-// making a food list
+interface ITCourse {
+    courseName : string;
+    location : string;
+    onSiteStudents : number;
 
-let foodList = ["biryani","pulao","karahi","qorma"];
+}
 
-console.log("list of dishes");
+let ITCourse = {
+    courseName : "typescript and javascript",
+    location : "governor house sindh",
+    onSiteStudents : 50000
+};
 
-foodList.forEach(dish => console.log(dish));
-
+console.log (ITCourse);

@@ -1,4 +1,6 @@
-// making a food list
-var foodList = ["biryani", "pulao", "karahi", "qorma"];
-console.log("list of dishes");
-foodList.forEach(function (dish) { return console.log(dish); });
+var ITCourse = {
+    courseName: "typescript and javascript",
+    location: "governor house sindh",
+    onSiteStudents: 50000
+};
+console.log(ITCourse);
